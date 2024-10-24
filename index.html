@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Food Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Waste Food Management</h1>
+    </header>
+
+    <section id="intro">
+        <h2>Why Manage Food Waste?</h2>
+        <p>Food waste is a major issue globally, and we can all contribute to reducing it. This website helps you log and monitor food waste to adopt better habits.</p>
+    </section>
+
+    <section id="log-form">
+        <h2>Log Your Food Waste</h2>
+        <form id="waste-form">
+            <label for="food-type">Food Type:</label>
+            <input type="text" id="food-type" name="food-type" required>
+
+            <label for="quantity">Quantity (in kg):</label>
+            <input type="number" id="quantity" name="quantity" required>
+
+            <label for="reason">Reason for Waste:</label>
+            <textarea id="reason" name="reason" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="dashboard">
+        <h2>Food Waste Statistics</h2>
+        <div id="stats">
+            <!-- Stats will be dynamically updated here -->
+        </div>
+    </section>
+
+    <section id="suggestions">
+        <h2>Tips to Reduce Food Waste</h2>
+        <ul>
+            <li>Plan meals ahead of time to avoid overbuying.</li>
+            <li>Store food properly to extend its shelf life.</li>
+            <li>Use leftovers creatively in new meals.</li>
+            <li>Compost organic waste instead of discarding it.</li>
+        </ul>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
